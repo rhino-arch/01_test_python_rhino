@@ -2,7 +2,7 @@ from Grasshopper import DataTree
 from Grasshopper.Kernel.Data import GH_Path
 from Rhino.Geometry import Point3d
 
-def createTreee(points, breakP):
+#def createTreee(points, breakP):
     numPath = 0
     newPath = GH_Path(0)
     tree = DataTree[Point3d]()
@@ -13,3 +13,6 @@ def createTreee(points, breakP):
             newPath = GH_Path(numPath)
         tree.Add(points[num], newPath)
     return tree
+
+
+"Toi tao them phan ghi de"
